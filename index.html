@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Krish Garg — Building digital experiences that matter</title>
+    <meta name="description" content="Krish Garg — Computer Science student, full-stack developer and AI enthusiast. Projects, skills, experience and contact, assembled live by seven collaborator cursors." />
+    <meta name="author" content="Krish Garg" />
+    <meta name="theme-color" content="#ECEAE5" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Krish Garg — Building digital experiences that matter" />
+    <meta property="og:description" content="A multiplayer-cursor portfolio: seven collaborators assemble the page as you watch." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- set the theme before first paint so there is no flash -->
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript><p style="padding:24px;font-family:system-ui">This portfolio needs JavaScript for its interactive canvas. Contact: krish.garg2708@gmail.com</p></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
